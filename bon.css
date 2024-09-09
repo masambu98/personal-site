@@ -7,7 +7,25 @@
   --bgimg: url('public/bonn.png');
 }
 
+/* Style for the typewriter effect */
+.typewriter {
+  overflow: hidden; /* Ensures that text will not overflow */
+  border-right: 0.15em solid orange; /* Cursor effect */
+  white-space: nowrap; /* Prevents line breaks */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
 
+/* Typewriter animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
 
 .shipperwrapper{
   width: 850px;
