@@ -656,7 +656,7 @@ font-family: vcr;
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;font-family: vcr; font-family: var(--monospace);
+  justify-content: center; font-family: vcr2; 
 }
 
 .title-corner {
@@ -713,7 +713,7 @@ ul li {
   padding: 10px;
   transition: background 0.2s;
 }
-ul li a {font-family: monospace;
+ul li a { font-family: vcr2; 
   color: #2375D8;
   text-decoration: none;
   text-transform: uppercase;
