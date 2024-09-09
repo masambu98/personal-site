@@ -1,6 +1,4 @@
-element * {
-  font-family:'Cutive Mono', monospace; /* Resets to the default font for all child elements */
-}
+
 :root{
   --sansserif: 'Montserrat', sans serif;
   --monospace: 'Cutive Mono', monospace;
@@ -506,7 +504,7 @@ body {background: white;
     background-size: 10vw 10vw;
     margin: 0;
     padding: 0;
-    font-family: vcr2; 
+    font-family: vcr; 
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
        user-select: none; /* Prevent text selection during dragging */
