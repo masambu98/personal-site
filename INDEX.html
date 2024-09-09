@@ -423,5 +423,32 @@ function dragElement(element) {
 document.getElementById("defaultOpen").click();</script>
 
 
+	    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const typingSound = document.getElementById('typing-sound');
+    const typewriter = document.querySelector('.typewriter');
+
+    // Function to play typing sound
+    function playTypingSound() {
+      typingSound.currentTime = 0; // Rewind to start
+      typingSound.play();
+    }
+
+    // Set an interval to play the sound based on the typing speed
+    const typingInterval = 100; // Adjust this to match the typing speed
+
+    let intervalId = setInterval(() => {
+      playTypingSound();
+    }, typingInterval);
+
+    // Clear the interval when animation ends
+    typewriter.addEventListener('animationend', () => {
+      clearInterval(intervalId);
+    });
+  });
+</script>
+
+
+
 </body>
 </html>
