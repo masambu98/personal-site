@@ -10,7 +10,7 @@
 /* Style for the typewriter effect */
 .typewriter {
   overflow: hidden; /* Ensures that text will not overflow */
-  border-right: 0.15em solid orange; /* Cursor effect */
+  
   white-space: nowrap; /* Prevents line breaks */
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
