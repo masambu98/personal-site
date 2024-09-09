@@ -1,4 +1,6 @@
-
+element * {
+  font-family: initial; /* Resets to the default font for all child elements */
+}
 :root{
   --sansserif: 'Montserrat', sans serif;
   --monospace: 'Cutive Mono', monospace;
