@@ -1,5 +1,5 @@
 element * {
-  font-family: initial; /* Resets to the default font for all child elements */
+  font-family:'Cutive Mono', monospace; /* Resets to the default font for all child elements */
 }
 :root{
   --sansserif: 'Montserrat', sans serif;
@@ -506,7 +506,7 @@ body {background: white;
     background-size: 10vw 10vw;
     margin: 0;
     padding: 0;
-    font-family: vcr; 
+    font-family: vcr2; 
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
        user-select: none; /* Prevent text selection during dragging */
@@ -656,7 +656,7 @@ font-family: vcr;
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;font-family: vcr;
+  justify-content: center;font-family: vcr; font-family: var(--monospace);
 }
 
 .title-corner {
@@ -713,7 +713,7 @@ ul li {
   padding: 10px;
   transition: background 0.2s;
 }
-ul li a {
+ul li a {font-family: monospace;
   color: #2375D8;
   text-decoration: none;
   text-transform: uppercase;
