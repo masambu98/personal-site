@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'HERMIONE_Normal';
+    src: url('https://files.jcink.net/uploads2/abitest04/HERMIONE_Normal.woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+  /* images*/ 
+  --bgimg: url('https://images.unsplash.com/photo-1532643482534-d6fc5b2468db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80');
+  
+  /* colors*/ 
+  --bgcolor: radial-gradient(circle, rgba(144,207,203,1) 0%, rgba(199,217,199,1) 100%);
+  --transparent: rgba(0,0,0,0);
+  --light: #f0f0f0;
+  --dark: #232324;
+  --accent: var(--admin);
+  --lightgrey:#c7c7c7;
+  --darkgrey:#696969;
+  
+  /* fonts*/ 
+  --headerfont:'HERMIONE_Normal', sans-serif;
+  --bodyfont:'Montserrat', sans-serif;
+  --accentfont: 'Inconsolata', sans-serif;
+  
+  /* member group colors and images*/  
+  --admin: #aa90cf;
+  --admintrans: rgba(176, 186, 169, .7);
+  
+}
+
+[data-theme="darkmode"] {
+}
+
+bonabout{
+  margin: 0px !important;
+  background-image: var(--bgimg), var(--bgcolor);
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  color: var(--dark);
+  font: .85rem var(--bodyfont);
+  text-size-adjust: none;
+}
+
+
+::-webkit-scrollbar {
+	width: 15px;
+	}
+
+::-webkit-scrollbar-thumb {
+	border: 6px solid transparent;
+	background-clip: padding-box;
+	background-color: var(--dark);
+	}
+
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+	display: none;
+	}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+	}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/****************************************
+Member Groups
+*****************************************/
+
+.g-4, #admin .admin, admin, .profile-4{
+--accent: var(--admin);
+--transaccent: var(--admintrans);}
+
+.wrapper{
+  margin: 75px;
+}
+
+/****************************************
+Post Row
+*****************************************/
+
+#postrow{
+  margin: auto;
+  max-width: 1100px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.postrow{
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  outline: 2px solid var(--light);
+  outline-offset: 10px;
+}
+
+.pr-top{
+  min-height: 35px;
+  background: var(--light);
+  border-bottom: 1px solid var(--lightgrey);
+}
+
+.pr-colorblock{
+  background:radial-gradient(circle, rgba(170,144,207,.6) 0%, rgba(199,212,217,.6) 100%);
+  min-height: 70px;
+  
+}
+
+.pr-charname{
+  margin-top: -15px;
+  font: 3rem var(--headerfont);
+  margin-left: 20px;
+  padding-right 50px;
+  white-space: nowrap;
+    color: black;
+  -webkit-text-fill-color: var(--transparent); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+}
+
+.pr-ooc-info{
+  margin-top: 2px;
+  margin-left: 35px;
+  text-transform: uppercase;
+  font: .85rem var(--accentfont);
+  letter-spacing: .5px;
+}
+
+.pr-ooc-info a{
+  font-weight: bold;
+  transition: .3s ease;
+}
+
+.pr-ooc-info a:hover{
+  color: var(--accent);
+}
+
+.pr-buttons{
+  min-height: 35px;
+  border-top: 1px solid var(--lightgrey);
+  border-bottom: 1px solid var(--lightgrey);
+  background: var(--light);
+  text-transform: uppercase;
+  font: .85rem var(--accentfont);
+  letter-spacing: .5px;
+  padding-left: 20px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--darkgrey);
+  
+}
+
+.pr-post{
+  background: var(--light);
+  padding: 25px;
+  padding-right: 50px;
+}
+
+.postcolor{
+  text-align: justify;
+  padding: 30px;
+}
+
+.pr-bottom{
+  min-height: 35px;
+  border-top: 1px solid var(--lightgrey);
+  background: var(--light);
+  text-transform: uppercase;
+  font: .85rem var(--accentfont);
+  letter-spacing: .5px;
+  padding-left: 20px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--darkgrey);
+}
+
+.pr-bottom span{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/****************************************
+Miniprofile
+*****************************************/
+
+.miniprofile{
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.miniprofile-sticky{
+  position: sticky;
+  top: 30px;
+  outline: 2px solid var(--light);
+  outline-offset: 10px;
+}
+
+.miniprofile-main{
+  width: 220px;
+  height: 440px;
+    background:radial-gradient(circle, rgba(170,144,207,.6) 0%, rgba(199,212,217,.6) 100%);
+  backdrop-filter: brightness(120%);
+  overflow: hidden;
+  position: relative;
+}
+
+.miniprofile-img{
+  width: 220px;
+  height: 440px;
+  background-size: cover;
+  transition: .6s ease;
+  margin-top: 0px;
+  background-position: center center;
+  position: absolute;
+}
+
+.miniprofile-main:hover .miniprofile-img{
+    width: 140px;
+  height: 140px;
+  margin-top: 150px;
+  margin-left: 40px;
+}
+
+.mp-membergroup{
+  font: .95rem var(--headerfont);
+  position: absolute;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-top: 440px;
+  left: 14px;  
+  transition: .85s ease;
+  height: 425px;
+}
+
+.miniprofile-main:hover .mp-membergroup{
+  margin-top: 0px;
+}
+
+.mp-info{
+  text-transform: uppercase;
+  font: .8rem var(--accentfont);
+  letter-spacing: .5px;
+  font-weight: 500;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.mp-info div{
+  border-bottom: 1px solid var(--dark);
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.mp-topinfo{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    margin-top: 20px;
+  margin-left: -125px;
+  transition: .5s ease;
+}
+
+.miniprofile-main:hover .mp-topinfo{
+    margin-left: 10px;
+}
+
+.mp-bottominfo{
+  width: 145px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    margin-top: 185px;
+  transition: .5s ease;
+  margin-left: 230px;
+  text-align: right;
+}
+
+.miniprofile-main:hover .mp-bottominfo{
+  margin-left: 60px;
+}
+
+.mp-postinfo{
+  position: absolute;
+  width: 85px;
+  height: 200px;
+  border: 2px solid var(--light);
+  color: white;
+  transition: .5s ease;
+  top: -210px;
+  right: -60px;
+}
+
+.mp-postinfo div{
+  position: absolute;
+  font: 1rem var(--accentfont);
+  bottom: 5px;
+  text-transform: uppercase;
+  color: var(--accent);
+mix-blend-mode: difference;
+  margin-left: 5px;
+    writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.miniprofile-main:hover .mp-postinfo{
+  top: -20px;
+  right: -10px;
+}
+
+/****************************************
+texty text
+*****************************************/
+ .rolling-text {
+	 display: inline-block;
+	 text-decoration: none;
+	 overflow: hidden;
+	 cursor: pointer;
+   height: 2.9rem;
+}
+ .rolling-text:hover .letter, .rolling-text.play .letter {
+	 transform: translateY(-100%);
+}
+ .rolling-text .block:last-child {
+	 color: black;
+}
+ .rolling-text .letter {
+	 display: inline-block;
+	 transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+ .letter:nth-child(1) {
+	 transition-delay: 0s;
+}
+ .letter:nth-child(2) {
+	 transition-delay: 0.015s;
+}
+ .letter:nth-child(3) {
+	 transition-delay: 0.03s;
+}
+ .letter:nth-child(4) {
+	 transition-delay: 0.045s;
+}
+ .letter:nth-child(5) {
+	 transition-delay: 0.06s;
+}
+ .letter:nth-child(6) {
+	 transition-delay: 0.075s;
+}
+ .letter:nth-child(7) {
+	 transition-delay: 0.09s;
+}
+ .letter:nth-child(8) {
+	 transition-delay: 0.105s;
+}
+ .letter:nth-child(9) {
+	 transition-delay: 0.12s;
+}
+ .letter:nth-child(10) {
+	 transition-delay: 0.135s;
+}
+ .letter:nth-child(11) {
+	 transition-delay: 0.15s;
+}
+ .letter:nth-child(12) {
+	 transition-delay: 0.165s;
+}
+ .letter:nth-child(13) {
+	 transition-delay: 0.18s;
+}
+ .letter:nth-child(14) {
+	 transition-delay: 0.195s;
+}
+ .letter:nth-child(15) {
+	 transition-delay: 0.21s;
+}
+ .letter:nth-child(16) {
+	 transition-delay: 0.225s;
+}
+ .letter:nth-child(17) {
+	 transition-delay: 0.24s;
+}
+ .letter:nth-child(18) {
+	 transition-delay: 0.255s;
+}
+ .letter:nth-child(19) {
+	 transition-delay: 0.27s;
+}
+ .letter:nth-child(20) {
+	 transition-delay: 0.285s;
+}
+ .letter:nth-child(21) {
+	 transition-delay: 0.3s;
+}
