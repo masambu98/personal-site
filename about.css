@@ -36,9 +36,7 @@
   --darkgrey:#696969;
   
   /* fonts*/ 
-  --headerfont:'vcr', sans-serif;
-  --bodyfont:'vcr2';
-  --accentfont: 'vcr';
+ 
   
   /* member group colors and images*/  
   --admin: #aa90cf;
@@ -146,7 +144,7 @@ Post Row
   margin-top: 2px;
   margin-left: 35px;
   text-transform: uppercase;
-  font: .85rem var(--accentfont);
+  font: .85rem vcr;
   letter-spacing: .5px;
 }
 
@@ -165,7 +163,8 @@ Post Row
   border-bottom: 1px solid var(--lightgrey);
   background: var(--light);
   text-transform: uppercase;
-  font: .85rem var(--accentfont);
+  font: .85rem ;
+	font-family:vcr;
   letter-spacing: .5px;
   padding-left: 20px;
   padding-right: 50px;
@@ -192,7 +191,7 @@ Post Row
   border-top: 1px solid var(--lightgrey);
   background: var(--light);
   text-transform: uppercase;
-  font: .85rem var(--accentfont);
+  font: .85rem ;font-family:vcr;
   letter-spacing: .5px;
   padding-left: 20px;
   padding-right: 50px;
@@ -264,7 +263,8 @@ Miniprofile
 
 .mp-info{
   text-transform: uppercase;
-  font: .8rem var(--accentfont);
+  font: .8rem ;
+	font-family:vcr;
   letter-spacing: .5px;
   font-weight: 500;
   padding-left: 5px;
