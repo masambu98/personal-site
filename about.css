@@ -1,10 +1,26 @@
 @font-face {
-    font-family: 'HERMIONE_Normal';
-    src: url('https://files.jcink.net/uploads2/abitest04/HERMIONE_Normal.woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
+  font-family: 'vcr';
+
+  src: url('vcr.ttf'); 
+  src: 
+    local('vcr'),
+    local('vcr'),
+    url('vcr.ttf') 
+    format('opentype');}
+
+    @font-face {
+
+  font-family: 'vcr2';
+
+  src: url('vcr2.ttf'); 
+  src: 
+    local('vcr2'),
+    local('vcr2'),
+    url('vcr2.ttf') 
+    format('opentype');}
+
+
 
 :root{
   /* images*/ 
@@ -20,9 +36,9 @@
   --darkgrey:#696969;
   
   /* fonts*/ 
-  --headerfont:'HERMIONE_Normal', sans-serif;
-  --bodyfont:'Montserrat', sans-serif;
-  --accentfont: 'Inconsolata', sans-serif;
+  --headerfont:'vcr', sans-serif;
+  --bodyfont:'vcr2';
+  --accentfont: 'vcr';
   
   /* member group colors and images*/  
   --admin: #aa90cf;
