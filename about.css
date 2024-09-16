@@ -119,7 +119,17 @@ Post Row
 
 .pr-top{
   min-height: 35px;
-  background-color:black;
+  background-image: conic-gradient(
+    #a3a3ff 90deg,
+    #bfbfff 90deg,
+    #bfbfff 180deg,
+    #a3a3ff 180deg,
+    #a3a3ff 270deg,
+    #bfbfff 270deg
+  );
+  background-position: left top;
+  background-size: 5px 5px;
+  background-repeat: repeat;
   border-bottom: 1px solid var(--lightgrey);
 }
 
