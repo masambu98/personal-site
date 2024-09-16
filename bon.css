@@ -476,7 +476,7 @@
     text-decoration: none;
 	background-color: #000;
     color: #f3585b;
-     font-family: vcr2;
+     font-family: 'VCR OSD Mono', sans-serif;
 }
 
 
@@ -635,7 +635,7 @@ body {background: white;
 .footer a {
    
 	
-font-family: vcr;
+font-family: 'VCR OSD Mono', sans-serif;
 
    
 }
@@ -920,7 +920,7 @@ box-sizing: border-box;
 .window.projects {
     width:  fit-content;
     height: fit-content;
-   
+   font-family: 'VCR OSD Mono', sans-serif;
     left: 30%;
     margin-top: 3;
     position: absolute;
