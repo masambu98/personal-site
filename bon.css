@@ -7,24 +7,17 @@
   --bgimg: url('public/bonn.png');
 }
 
-/* Style for the typewriter effect */
-.typewriter {
-  overflow: hidden; /* Ensures that text will not overflow */
-  
-  white-space: nowrap; /* Prevents line breaks */
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+.cta-button {
+    margin-top: 20px;
 }
 
-/* Typewriter animation */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-/* Blinking cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: orange; }
+.cta-button button {
+    padding: 10px 20px;
+    background-color: #0000ff;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 .shipperwrapper{
