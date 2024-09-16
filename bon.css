@@ -380,7 +380,7 @@
             color: red; /* Change text color on hover if desired */
         }
 
-        .text {
+        .text { font-family: 'VCR OSD Mono', sans-serif;
             font-size: 20px;
             cursor: pointer;
         }
