@@ -283,7 +283,8 @@ Miniprofile
 
 .mp-membergroup{
   font: .95rem;
-	font-family:vcr;
+	                                                                    font-family: 'VCR OSD Mono', sans-serif;
+                                                
   position: absolute;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
