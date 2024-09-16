@@ -49,13 +49,13 @@
 
 bonabout{
   margin: 0px !important;
-  background-image: var(--bgimg), var(--bgcolor);
+  background-color:black;
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;
-  color: var(--dark);
+  color: black;
   font: .85rem var(--bodyfont);
   text-size-adjust: none;
 }
@@ -182,12 +182,12 @@ Post Row
 }
 
 .postcolor{
-	 font-size: 2em;
-    font-weight: bold;
+	 font-size: 1.2em;
+    
 
     color: gray;
 
-  text-align: center;
+  text-align: justify;
   padding: 30px;
 }
 
