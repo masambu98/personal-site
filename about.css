@@ -134,7 +134,14 @@ Post Row
 }
 
 .pr-colorblock{
-  background-color:#5555ff;
+  background-image: conic-gradient(
+    #a3a3ff 90deg,
+    #bfbfff 90deg,
+    #bfbfff 180deg,
+    #a3a3ff 180deg,
+    #a3a3ff 270deg,
+    #bfbfff 270deg
+  );
   min-height: 70px;
   
 }
