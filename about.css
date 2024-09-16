@@ -182,10 +182,12 @@ Post Row
 }
 
 .postcolor{
-	font-size: 1.2em;
+	 font-size: 2em;
+    font-weight: bold;
+
     color: gray;
 
-  text-align: justify;
+  text-align: center;
   padding: 30px;
 }
 
