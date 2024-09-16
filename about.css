@@ -248,7 +248,7 @@ Miniprofile
 .miniprofile-main{
   width: 220px;
   height: 440px;
-    background:radial-gradient(circle, rgba(170,144,207,.6) 0%, rgba(199,212,217,.6) 100%);
+    background-color: #ff414c;
   backdrop-filter: brightness(120%);
   overflow: hidden;
   position: relative;
