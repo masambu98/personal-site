@@ -119,12 +119,12 @@ Post Row
 
 .pr-top{
   min-height: 35px;
-  background: var(--light);
+  background-color:black;
   border-bottom: 1px solid var(--lightgrey);
 }
 
 .pr-colorblock{
-  background:radial-gradient(circle, rgba(170,144,207,.6) 0%, rgba(199,212,217,.6) 100%);
+  background-color:#5555ff;
   min-height: 70px;
   
 }
@@ -176,7 +176,7 @@ Post Row
 }
 
 .pr-post{
-  background: var(--light);
+   background-color:#5555ff;
   padding: 25px;
   padding-right: 50px;
 }
