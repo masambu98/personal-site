@@ -4,7 +4,7 @@
   --monospace: 'Cutive Mono', monospace;
   --green: #4ca273;
   --gray: #777777;
-  --bgimg: url('public/bonn.png');
+  --bgimg: url('bonn.png');
 }
 .skills {
     display: flex;
