@@ -204,7 +204,17 @@ Post Row
 .pr-bottom{
   min-height: 35px;
   border-top: 1px solid var(--lightgrey);
-  background: var(--light);
+  background-image: conic-gradient(
+    #a3a3ff 90deg,
+    #bfbfff 90deg,
+    #bfbfff 180deg,
+    #a3a3ff 180deg,
+    #a3a3ff 270deg,
+    #bfbfff 270deg
+  );
+  background-position: left top;
+  background-size: 5px 5px;
+  background-repeat: repeat;
   text-transform: uppercase;
   font: .85rem ;font-family:vcr;
   letter-spacing: .5px;
